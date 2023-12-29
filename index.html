@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@tailwindcss/forms examples</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body>
+    <div class="antialiased text-gray-900 px-6">
+        <div class="max-w-xl mx-auto py-6 divide-y md:max-w-4xl">
+            <div class="py-2">
+                <h1 class="text-4xl font-bold">Form To AI</h1>
+                <p class="mt-2 text-lg text-gray-600">
+                    Form communication to leonardo, etc
+                </p>
+            </div>
+            <div class="py-2">
+                <div class="mt-2 max-w-md">
+                    <div class="grid grid-cols-1 gap-6">
+                        <label class="block">
+                            <span class="text-gray-700">Search</span>
+                            <input type="text" class="mt-1 block w-full" placeholder="" id="mjcan-input-search" />
+                            <button type="button" class="p-2 bg-purple-500" id="mjcan-btn-search">GO</button>
+                        </label>
+
+                        <div class="mt-6">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="bg-gray-300">xx</div>
+                                <div class="bg-gray-300"> aaa</div>
+                            </div>
+                        </div>
+
+                        <label class="block">
+                            <span class="text-gray-700">Additional details</span>
+                            <textarea class="mt-1 block w-full" rows="3"></textarea>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

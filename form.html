@@ -53,7 +53,31 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        const addBtnSearchHandler = async () => {
+            const inputSearch = document.getElementById('mjcan-input-search');
+            //alert(inputSearch.value);  
+            const bc = new BroadcastChannel("sent_channel");
+            bc.postMessage({ type: 'sent', url: 'https://app.leonardo.ai/ai-generations', message: inputSearch.value });
+            console.log("sent", bc);
+
+            //top.postMessage({ type: 'sent', url: 'https://app.leonardo.ai/ai-generations', message: inputSearch.value }, '*');
+
+        }
+
+        const newFormLoaded = async () => {
+            const btnSearch = document.getElementById('mjcan-btn-search');
+            if (btnSearch) { 
+                btnSearch.addEventListener("click", addBtnSearchHandler);
+            }
+        };
+
+        newFormLoaded();
+
+        // http-server -c-1
+
+
+    </script>
 </body>
 
 </html>
